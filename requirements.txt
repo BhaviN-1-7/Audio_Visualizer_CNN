@@ -1,0 +1,11 @@
+pandas
+numpy
+torchaudio
+torch
+tqdm
+tensorboard
+fastapi
+librosa
+pydantic
+soundfile
+# next-themes lucide-react framer-motion
