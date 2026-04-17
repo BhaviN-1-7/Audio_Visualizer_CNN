@@ -174,8 +174,6 @@ Visit `http://localhost:3000` to see the application.
 
 ### CNN Structure
 
-![Model Architecture](./images/model-architecture.png)
-
 The AudioCNN uses a ResNet-inspired architecture:
 
 ```
@@ -254,51 +252,6 @@ netlify deploy --prod
 | `NEXT_PUBLIC_API_TIMEOUT` | Request timeout (ms) | 30000 |
 | `NEXT_PUBLIC_MAX_FILE_SIZE` | Max file size (bytes) | 10485760 |
 
-## API Reference
-
-### Inference Endpoint
-
-**POST** `/inference`
-
-#### Request
-
-```json
-{
-  "audio_data": "base64-encoded-audio-file"
-}
-```
-
-#### Response
-
-```json
-{
-  "predictions": [
-    {
-      "class": "vacuum_cleaner",
-      "confidence": 0.85
-    },
-    {
-      "class": "washing_machine",
-      "confidence": 0.12
-    }
-  ],
-  "visualization": {
-    "conv1": {
-      "shape": [64, 32, 64],
-      "values": [[...]]
-    }
-  },
-  "input_spectrogram": {
-    "shape": [128, 256],
-    "values": [[...]]
-  },
-  "waveform": {
-    "values": [0.1, -0.2, ...],
-    "sample_rate": 44100,
-    "duration": 2.5
-  }
-}
-```
 
 ## Performance
 
