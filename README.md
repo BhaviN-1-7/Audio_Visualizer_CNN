@@ -21,8 +21,6 @@ This project combines deep learning with modern web technologies to create an en
 
 ### System Overview
 
-![Architecture Diagram](./images/architecture-diagram.png)
-
 The system consists of three main components:
 
 1. **CNN Model** (PyTorch) - Residual network for audio classification
@@ -146,7 +144,8 @@ Visit `http://localhost:3000` to see the application.
 
 ### 3. Explore Visualizations
 
-![Visualization Dashboard](./images/visualization-dashboard.png)
+![Visualization Dashboard](./images/visualization-dashboard-1.png)
+![Convolutional Layer Outputs](./images/visualization-dashboard-2.png)
 
 #### Spectrogram View
 - Input audio converted to mel-spectrogram
